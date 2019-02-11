@@ -91,6 +91,8 @@ def draw?(board)
     return true
    elsif !won?(board) && !full?(board)
     return false 
+  else won?(borad)
+    return false
    end
 end
 
