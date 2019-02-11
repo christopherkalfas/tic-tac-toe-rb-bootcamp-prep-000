@@ -106,5 +106,10 @@ def winner(board)
 end
 
 def play(board)
-  input = gets
+  until over?(board)
+  turn(board)
 end
+  if won?(board)
+    winner(board)
+  elsif draw?(board)
+  puts "Cat's Game!"
