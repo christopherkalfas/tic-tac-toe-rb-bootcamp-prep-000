@@ -104,14 +104,15 @@ def winner(board)
     return board[won?(board)[0]]
   end
 end
-
+#----------------------------------------------------
 def play(board)
   until over?(board)
   turn(board)
 end
   if won?(board)
-    winner(board)
+     winner(board)
+     puts "Congratulations X!" || "Congratulations O!"
   elsif draw?(board)
-  puts "Cat's Game!"
+    puts "Cat's Game!"
 end
 end
